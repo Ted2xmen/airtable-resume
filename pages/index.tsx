@@ -1,11 +1,14 @@
+import { ResumeGrid } from '../components/ResumeGrid/ResumeGrid';
+import Layout from '../components/Layout';
 import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 
 export default function HomePage() {
   return (
     <>
-      <Welcome />
-      <ColorSchemeToggle />
+      <Layout>
+        <Welcome />
+        <ResumeGrid />
+      </Layout>
     </>
   );
 }

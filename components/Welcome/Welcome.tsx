@@ -1,4 +1,5 @@
 import { Title, Text, Anchor } from '@mantine/core';
+import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
 import useStyles from './Welcome.styles';
 
 export function Welcome() {
@@ -6,19 +7,17 @@ export function Welcome() {
 
   return (
     <>
-      <Title className={classes.title} align="center" mt={100}>
-        Welcome to{' '}
-        <Text inherit variant="gradient" component="span">
-          Mantine
-        </Text>
+      <Title className={classes.title} align="center" mt={10}>
+        Tuğrul Erdem Dogru
       </Title>
-      <Text color="dimmed" align="center" size="lg" sx={{ maxWidth: 580 }} mx="auto" mt="xl">
-        This starter Next.js project includes a minimal setup for server side rendering, if you want
-        to learn more on Mantine + Next.js integration follow{' '}
-        <Anchor href="https://mantine.dev/guides/next/" size="lg">
-          this guide
-        </Anchor>
-        . To get started edit index.tsx file.
+      <Title className={classes.subTitle} align="center" variant="gradient">
+        Frontend Developer
+      </Title>
+      <ColorSchemeToggle />
+      <Text color="dimmed" align="center" size="md" sx={{ maxWidth: 680 }} mx="auto" mt="xl">
+        Frontend Developer. Mostly Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+        minus quae cum placeat eum et amet sunt quidem aliquid voluptate. Mostly React, Vue and
+        TailwindCSS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, incidunt.
       </Text>
     </>
   );
